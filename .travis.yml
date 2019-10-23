@@ -38,6 +38,7 @@ install:
   - true
 
 script:
+  - go get github.com/goburrow/modbus
   - make $TARGETS
 
 after_success:
