@@ -1,0 +1,5 @@
+= Modbusbeat Docs
+
+Welcome to the Modbusbeat documentation.
+
+

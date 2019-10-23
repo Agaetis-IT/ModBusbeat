@@ -1,0 +1,19 @@
+- key: modbusbeat
+  title: modbusbeat
+  description:
+  fields:
+    - name: modbusbeat
+      type: group
+      fields:
+          - name: type
+            type: keyword
+            description: >
+              Modbus register type to read like Holding, Input, Discret or Coil
+          - name: address
+            type: integer
+            description: >
+              Modbus address to read like 101 or 0x65
+          - name: value
+            type: integer
+            description: >
+              Modbus register read value

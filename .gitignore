@@ -1,0 +1,7 @@
+/.idea
+/build
+.editorconfig
+.DS_Store
+/modbusbeat
+/modbusbeat.test
+*.pyc

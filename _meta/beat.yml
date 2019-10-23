@@ -1,0 +1,12 @@
+################### Modbusbeat Configuration Example #########################
+
+############################# Modbusbeat ######################################
+
+modbusbeat:
+  period: 5s
+  devices:
+    - address: localhost
+      registers:
+        - type: "Holding"
+          addresses:
+            - 101

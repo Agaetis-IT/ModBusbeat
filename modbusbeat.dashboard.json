@@ -1,0 +1,87 @@
+{
+  "objects": [
+    {
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"f5cab5b0-3c25-11e9-98d1-d9e3e2d1e4df\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "title": "Min Modbus beat Value for Address",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"request\"}},\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(0,68,27)\",\"50 - 75\":\"rgb(116,196,118)\",\"75 - 100\":\"rgb(247,252,245)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"Min Modbus beat Value for Address\",\"type\":\"gauge\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"gauge\":{\"backStyle\":\"Full\",\"colorSchema\":\"Greens\",\"colorsRange\":[{\"from\":0,\"to\":50},{\"from\":50,\"to\":75},{\"from\":75,\"to\":100}],\"extendRange\":true,\"gaugeColorMode\":\"Labels\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Circle\",\"invertColors\":true,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":true},\"style\":{\"bgColor\":false,\"bgFill\":\"#eee\",\"bgMask\":false,\"bgWidth\":0.9,\"fontSize\":60,\"labelColor\":true,\"mask\":false,\"maskBars\":50,\"subText\":\"\",\"width\":0.9},\"type\":\"meter\",\"verticalSplit\":false,\"minAngle\":0,\"maxAngle\":6.283185307179586},\"isDisplayWarning\":true,\"type\":\"gauge\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"modbusbeat.value\",\"json\":\"{\\\"script\\\": {\\\"lang\\\": \\\"painless\\\",\\\"inline\\\": \\\"doc['modbusbeat.value'].value / 10\\\"}}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"modbusbeat.address\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}"
+      },
+      "id": "0c6c3fd0-3c28-11e9-98d1-d9e3e2d1e4df",
+      "type": "visualization",
+      "updated_at": "2019-03-01T13:43:51.629Z",
+      "version": 1
+    },
+    {
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"f5cab5b0-3c25-11e9-98d1-d9e3e2d1e4df\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "title": "Max Modbus beat Value for Address",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"request\"}},\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(0,68,27)\",\"50 - 75\":\"rgb(116,196,118)\",\"75 - 100\":\"rgb(247,252,245)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"Max Modbus beat Value for Address\",\"type\":\"gauge\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"gauge\":{\"backStyle\":\"Full\",\"colorSchema\":\"Greens\",\"colorsRange\":[{\"from\":0,\"to\":50},{\"from\":50,\"to\":75},{\"from\":75,\"to\":100}],\"extendRange\":true,\"gaugeColorMode\":\"Labels\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Circle\",\"invertColors\":true,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":true},\"style\":{\"bgColor\":false,\"bgFill\":\"#eee\",\"bgMask\":false,\"bgWidth\":0.9,\"fontSize\":60,\"labelColor\":true,\"mask\":false,\"maskBars\":50,\"subText\":\"\",\"width\":0.9},\"type\":\"meter\",\"verticalSplit\":false,\"minAngle\":0,\"maxAngle\":6.283185307179586},\"isDisplayWarning\":true,\"type\":\"gauge\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"modbusbeat.value\",\"json\":\"{\\\"script\\\": {\\\"lang\\\": \\\"painless\\\",\\\"inline\\\": \\\"doc['modbusbeat.value'].value / 10\\\"}}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"modbusbeat.address\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}"
+      },
+      "id": "f068c560-3c27-11e9-98d1-d9e3e2d1e4df",
+      "type": "visualization",
+      "updated_at": "2019-03-01T13:43:25.132Z",
+      "version": 2
+    },
+    {
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"f5cab5b0-3c25-11e9-98d1-d9e3e2d1e4df\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "title": "Avg Modbus beat Value",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"table\"}},\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(8,48,107)\",\"50 - 75\":\"rgb(107,174,214)\",\"75 - 100\":\"rgb(247,251,255)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"Avg Modbus beat Value\",\"type\":\"gauge\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"gauge\":{\"backStyle\":\"Full\",\"colorSchema\":\"Blues\",\"colorsRange\":[{\"from\":0,\"to\":50},{\"from\":50,\"to\":75},{\"from\":75,\"to\":100}],\"extendRange\":true,\"gaugeColorMode\":\"Labels\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Circle\",\"invertColors\":true,\"labels\":{\"color\":\"black\",\"show\":false},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":true},\"style\":{\"bgColor\":false,\"bgFill\":\"#eee\",\"bgMask\":false,\"bgWidth\":0.9,\"fontSize\":60,\"labelColor\":true,\"mask\":false,\"maskBars\":50,\"subText\":\"\",\"width\":0.9},\"type\":\"meter\",\"verticalSplit\":false,\"minAngle\":0,\"maxAngle\":6.283185307179586},\"isDisplayWarning\":false,\"type\":\"gauge\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"modbusbeat.value\",\"json\":\"{\\\"script\\\": {\\\"lang\\\": \\\"painless\\\",\\\"inline\\\": \\\"doc['modbusbeat.value'].value / 10\\\"}}\",\"customLabel\":\"Average Temperature\"}}]}"
+      },
+      "id": "626ab6f0-3c28-11e9-98d1-d9e3e2d1e4df",
+      "type": "visualization",
+      "updated_at": "2019-03-01T13:50:20.939Z",
+      "version": 6
+    },
+    {
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"index\":\"f5cab5b0-3c25-11e9-98d1-d9e3e2d1e4df\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "Max Modbus value in Line from addresses",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"Max Modbus value in Line from addresses\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Max modbusbeat.value\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Max modbusbeat.value\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"modbusbeat.value\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"modbusbeat.address\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}"
+      },
+      "id": "c78a5c10-3c29-11e9-98d1-d9e3e2d1e4df",
+      "type": "visualization",
+      "updated_at": "2019-03-01T13:56:15.057Z",
+      "version": 1
+    },
+    {
+      "attributes": {
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":5,\"h\":3,\"i\":\"1\"},\"embeddableConfig\":{\"spy\":null,\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(0,68,27)\",\"50 - 75\":\"rgb(116,196,118)\",\"75 - 100\":\"rgb(247,252,245)\"}}},\"id\":\"0c6c3fd0-3c28-11e9-98d1-d9e3e2d1e4df\",\"title\":\"Min Temperature\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":7,\"y\":0,\"w\":5,\"h\":3,\"i\":\"2\"},\"embeddableConfig\":{\"spy\":null,\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(0,68,27)\",\"50 - 75\":\"rgb(116,196,118)\",\"75 - 100\":\"rgb(247,252,245)\"}}},\"id\":\"f068c560-3c27-11e9-98d1-d9e3e2d1e4df\",\"title\":\"Max Temperature\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":5,\"y\":0,\"w\":2,\"h\":3,\"i\":\"3\"},\"embeddableConfig\":{\"spy\":{\"mode\":{\"name\":\"table\"}},\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(8,48,107)\",\"50 - 75\":\"rgb(107,174,214)\",\"75 - 100\":\"rgb(247,251,255)\"}}},\"id\":\"626ab6f0-3c28-11e9-98d1-d9e3e2d1e4df\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":3,\"w\":12,\"h\":3,\"i\":\"4\"},\"version\":\"6.2.1\",\"type\":\"visualization\",\"id\":\"c78a5c10-3c29-11e9-98d1-d9e3e2d1e4df\"}]",
+        "timeRestore": false,
+        "title": "Modbus Temperature Dashboard",
+        "version": 1
+      },
+      "id": "5c31a3b0-3c2e-11e9-98d1-d9e3e2d1e4df",
+      "type": "dashboard",
+      "updated_at": "2019-03-01T14:29:02.442Z",
+      "version": 1
+    }
+  ],
+  "version": "6.2.1"
+}

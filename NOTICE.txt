@@ -1,0 +1,5 @@
+modbusbeat
+Copyright 2019 Alexandre Fiale
+
+This product includes software developed by The Apache Software
+Foundation (http://www.apache.org/).
