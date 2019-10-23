@@ -1,4 +1,5 @@
-# Modbusbeat
+[![Build Status](https://travis-ci.com/Agaetis-IT/ModBusbeat.svg?branch=master)](https://travis-ci.com/Agaetis-IT/ModBusbeat)
+# Modbusbeat 
 
 Modbusbeat is a lightweight agent that formats and ships data from ModBus devices.
 
